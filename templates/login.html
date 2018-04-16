@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div  action="" class="container" style="margin: 0 auto;width:40%;">
+      
+      <form class="form-signin form-group" method="POST">
+        <br style = “line-height:4;”><br>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input required autofocus name="username" type="text" id="inputEmail" class="form-control" placeholder="Username" value={{request.form.username}} >
+        <br/>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input required type="password"  name="password" id="inputPassword" class="form-control" placeholder="Password" value={{request.form.password}} >
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+      </form>
+
+    </div>
+
+{% endblock %}
